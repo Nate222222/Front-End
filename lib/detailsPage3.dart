@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class DetailsPage extends StatefulWidget {
+class DetailsPage3 extends StatefulWidget {
   final heroTag;
-  final name2;
-  final name1;
+  final name4;
+  final name44;
 
-  DetailsPage({this.heroTag, this.name2, this.name1});
+  DetailsPage3({this.heroTag, this.name4, this.name44});
 
   @override
   _DetailsPageState createState() => _DetailsPageState();
 }
 
-class _DetailsPageState extends State<DetailsPage> {
+class _DetailsPageState extends State<DetailsPage3> {
   var selectedCard = 'WEIGHT';
 
   @override
@@ -78,7 +78,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(widget.name1,
+                    Text(widget.name4,
                         style: TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 22.0,
@@ -87,7 +87,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        Text(widget.name2,
+                        Text(widget.name44,
                             style: TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontSize: 20.0,
@@ -152,15 +152,15 @@ class _DetailsPageState extends State<DetailsPage> {
                         child: ListView(
                           scrollDirection: Axis.vertical,
                           children: <Widget>[
-                            _buildInfoCard('Cement', '', 'Kgm3'),
+                            _buildInfoCard('Breadth', '', 'm'),
                             SizedBox(width: 10.0),
-                            _buildInfoCard('Blast Furnace Slag', '', 'Kgm3'),
+                            _buildInfoCard('Length', '', 'm'),
                             SizedBox(width: 10.0),
-                            _buildInfoCard('Fly Ash', '', 'Kgm3'),
+                            _buildInfoCard('Height', '', 'm'),
                             SizedBox(width: 10.0),
-                            _buildInfoCard('Water', '', 'L'),
+                            _buildInfoCard('Number of persons', '', 'Number'),
                             SizedBox(width: 10.0),
-                            _buildInfoCard('Age', '', 'days')
+                            _buildInfoCard('Temperature', '', 'C*')
                           ],
                         )
                     ),
