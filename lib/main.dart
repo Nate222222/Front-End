@@ -127,14 +127,14 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: EdgeInsets.only(left: 40.0),
             child: Row(
               children: <Widget>[
-                Text('Options',
+                Text('Welcome',
                     style: TextStyle(
                         fontFamily: 'Montserrat',
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 22.0)),
                 SizedBox(width: 10.0),
-                Text('Menu',
+                Text('Select a option from below',
                     style: TextStyle(
                         fontFamily: 'Montserrat',
                         color: Colors.white,
@@ -164,8 +164,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Container(
                         height: MediaQuery.of(context).size.height - 230.0,
                         child: ListView(children: [
-                          _buildFoodItem('assests/images/calculator.png', 'Compressive concrete', 'Strength calculator'),
-                          _buildFoodItem2('assests/images/brick.png', 'Brick', 'Calculator'),
+                          _buildFoodItem('assests/images/calculator2.png', 'Compressive concrete', 'Strength calculator'),
+                          _buildFoodItem2('assests/images/wall.png', 'Brick', 'Calculator'),
                           _buildFoodItem3('assests/images/AC.png', 'Air Conditioner', 'Size calculator'),
                           _buildFoodItem4('assests/images/frame.png', 'Wood Frame', 'Calculator'),
                           _buildFoodItem5('assests/images/floor.png', 'Flooring', 'Calculator'),

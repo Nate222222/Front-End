@@ -17,7 +17,7 @@ class _DetailsPageState extends State<DetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFF7A9BEE),
+        backgroundColor: Colors.grey,
         appBar: AppBar(
           leading: IconButton(
             onPressed: () {
@@ -49,7 +49,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 width: MediaQuery.of(context).size.width,
                 color: Colors.transparent),
             Positioned(
-                top: 75.0,
+                top: 95.0,
                 child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(
@@ -57,7 +57,7 @@ class _DetailsPageState extends State<DetailsPage> {
                           topRight: Radius.circular(45.0),
                         ),
                         color: Colors.white),
-                    height: MediaQuery.of(context).size.height - 100.0,
+                    height: MediaQuery.of(context).size.height - 150.0,
                     width: MediaQuery.of(context).size.width)),
             Positioned(
                 top: 30.0,
@@ -152,15 +152,48 @@ class _DetailsPageState extends State<DetailsPage> {
                         child: ListView(
                           scrollDirection: Axis.vertical,
                           children: <Widget>[
-                            _buildInfoCard('Cement', '', 'Kgm3'),
+                            _buildInfoCard('1', 'Cement', 'Kgm3'),
+                            Container(
+                                width: 1.0,
+                                child: TextField(
+                                    style: TextStyle(
+                                        fontSize: 40.0,
+                                        height: 2.0,
+                                        color: Colors.black
+                                    )
+                                )
+                            ),
+                            _buildInfoCard('2', 'Blast Furnace Slag', 'Kgm3'),
                             SizedBox(width: 10.0),
-                            _buildInfoCard('Blast Furnace Slag', '', 'Kgm3'),
+                            TextField(
+                              decoration: InputDecoration(
+                                border: OutlineInputBorder(),
+                                hintText: 'Enter a your value',
+                              ),
+                            ),
+                            _buildInfoCard('3', 'Fly Ash', 'Kgm3'),
                             SizedBox(width: 10.0),
-                            _buildInfoCard('Fly Ash', '', 'Kgm3'),
+                            TextField(
+                              decoration: InputDecoration(
+                                border: OutlineInputBorder(),
+                                hintText: 'Enter a your value',
+                              ),
+                            ),
+                            _buildInfoCard('4', 'Water', 'L'),
                             SizedBox(width: 10.0),
-                            _buildInfoCard('Water', '', 'L'),
-                            SizedBox(width: 10.0),
-                            _buildInfoCard('Age', '', 'days')
+                            TextField(
+                              decoration: InputDecoration(
+                                border: OutlineInputBorder(),
+                                hintText: 'Enter a your value',
+                              ),
+                            ),
+                            _buildInfoCard('5', 'Age', 'days'),
+                            TextField(
+                              decoration: InputDecoration(
+                                border: OutlineInputBorder(),
+                                hintText: 'Enter a your value',
+                              ),
+                            ),
                           ],
                         )
                     ),
